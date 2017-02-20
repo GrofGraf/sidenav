@@ -1,0 +1,1 @@
+Side navigation bar example. Javascript is usefull if we want to have fixed navbar, but there is more content (sidebar links) then fits the screen.

@@ -18,7 +18,7 @@ var navbar = document.getElementById("navbar");
     }
     function setPosition(){
         var position = window.pageYOffset || document.body.scrollTop;
-        if(position + window.innerHeight >= navbar.getBoundingClientRect().height){
+        if(position + window.innerHeight > navbar.getBoundingClientRect().height){
             navbar.style = "position:fixed;bottom:0;";
             content.style = "margin-left:200px;";
         }else{

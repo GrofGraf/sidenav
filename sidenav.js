@@ -6,12 +6,14 @@ var navbar = document.getElementById("navbar");
         navbar.style=null;
         content.style=null;
         document.removeEventListener("scroll", setPosition);
+		document.removeEventListener("touchmove", setPosition);
         if(navbar.getBoundingClientRect().height <= window.innerHeight){
             navbar.style="position:fixed;height:100%;";
             content.style="margin-left:200px;";
         }else{
             setPosition();
             document.addEventListener("scroll", setPosition);
+			document.addEventListener("touchmove", setPosition);
         }
     }
     function setPosition(){
